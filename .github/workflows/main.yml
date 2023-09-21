@@ -14,5 +14,6 @@ jobs:
           with:
             java-version: 17
             distribution: 'temurin'
+        - run: java App.java
         - name: Build project with Maven
           run: mvn -B package --file pom.xml
